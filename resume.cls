@@ -315,6 +315,13 @@
     {https://github.com/#1}%
     {\texttt{github.com/#1}}%
 }
+
+% GitHub: \github{<username>}
+\newcommand*{\gitee}[1]{%
+  \iconlink{\faCodeBranch}%
+    {https://gitee.com/#1}%
+    {\texttt{gitee.com/#1}}%
+}
 % Email address
 \newcommand*{\email}[1]{%
   \iconlink{\mailSymbol}{mailto:#1}{\texttt{#1}}
