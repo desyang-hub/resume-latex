@@ -332,17 +332,17 @@
     \def\@profile@width{\linewidth}
   }%
   \begin{minipage}{\@profile@width}
+    \centering % ←←← 关键：添加这一行！
     {\LARGE\bfseries\color{accentcolor} \@name}
     \ifdef{\@tagline}{%
-      \medskip \\
+      \par\medskip % ← 用 \par 更安全
       {\large \@tagline}
     }{}
-    \medskip \\
+    \par\medskip % ← 同上
     \@profile
   \end{minipage}
   \ifdef{\@photo}{%
-    % photo on the right side
-    \ifdefstring{\@photo@position}{right}{\hfill\@photo}{}% (suppress blank)
+    \ifdefstring{\@photo@position}{right}{\hfill\@photo}{}%
   }{}
 }
 

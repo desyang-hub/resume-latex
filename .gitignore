@@ -4,6 +4,7 @@
 *.log
 *.out
 *.xdv
+*.gz
 auto/
 photos/
 photo.*
