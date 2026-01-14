@@ -22,6 +22,11 @@
 % \tagline{\texorpdfstring{\icon{\faBinoculars} }{}<position-to-look-for>}
 % \tagline{<current-position>}
 
+\photo[
+  shape=circular,    % default is circular
+  position=right     % default is left
+]{7em}{assets/avactor.jpg}
+
 % \photo[
 %   shape=<circular|square>,    % default is circular
 %   position=<left|right>,      % default is left
@@ -49,9 +54,7 @@
 % Summary & Objectives
 %======================================================================
 \begin{abstract}
-深入掌握现代 C++（C++11/14）语言特性，包括智能指针、模板元编程、多线程与内存管理；
-熟练使用 Linux 开发环境，精通 Git 版本控制、Make/CMake 构建系统及调试工具链（gdb, strace, perf）；
-牢固掌握操作系统原理、计算机网络、数据库基础及经典数据结构与算法，能够高效设计并实现高性能、高可靠性的系统级软件。
+扎实掌握 C++11/14 核心特性（智能指针、模板、多线程）及 Linux 系统编程，具备高性能系统软件开发能力；熟悉现代工程工具链（CMake, Git, GDB, perf），能够独立完成从设计、编码到调试优化的完整开发流程；持续在 LeetCode 刷题 300+，具备优秀的算法思维与问题解决能力。
 \end{abstract}
 
 %======================================================================
@@ -65,20 +68,18 @@
 \sectionTitle{技能和语言}{\faWrench}
 %======================================================================
 \begin{competences}
-  \comptence{操作系统}{%
-    \icon{\faLinux} Linux
+  \comptence{编程语言}{%
+    C++ (C++11/14, STL, 智能指针, 多线程), 
+    Python (NumPy, 脚本自动化)
   }
-  \comptence{编程}{%
-    C/C++, Python
-  }
-  \comptence{工具}{%
-    SSH, Git, CMake
+  \comptence{系统与工具}{%
+    Linux 系统编程, GDB/Valgrind 调试, CMake/Make, Git, SSH
   }
   \comptence{深度学习}{%
-    Pytorch
+    PyTorch, OpenCV, 图像预处理与后处理
   }
-  \comptence{\icon{\faLanguage} 语言}{
-    CET-4
+  \comptence{其他}{%
+    MySQL, TCP/IP 网络编程, 数据结构与算法（LeetCode 300+）
   }
 \end{competences}
 
@@ -87,8 +88,8 @@
 %======================================================================
 \begin{educations}
   \education%
-    {至今}%
-    [2024.09]%
+    {2024.09}%
+    [至今]%
     {南昌航空大学}%
     {信息工程学院}%
     {计算机科学与技术}%
@@ -96,8 +97,8 @@
 
   \separator{0.5ex}
   \education%
-    {2024.06}%
-    [2020.09]%
+    {2020.09}%
+    [2024.06]%
     {南昌航空大学}%
     {信息工程学院}%
     {计算机科学与技术}%
@@ -105,46 +106,19 @@
 \end{educations}
 
 %======================================================================
-\sectionTitle{计算机技能}{\faCogs}
+\sectionTitle{专业技能}{\faCogs}
 %======================================================================
 \begin{itemize}
-  \item DragonFly BSD 操作系统开发者：
-    200+ 代码提交；内核以及系统工具；
-    在邮件列表和 IRC 频道交流和回答问题
-  \item 使用 Ansible 管理 VPS，部署个人域名邮箱、权威 DNS、网站、Git、IRC 等服务
-  \item 搭建并管理课题组的工作站、计算集群（4 节点）和网络设备
-  \item 参与配置和测试上海天文台的 SKA 高性能计算集群原型机
-    （1 管理节点 + 1 存储节点 + 4 计算节点）
-  \item 设计并开发了\enquote{2014 第一届中国—新西兰联合 SKA 暑期学校}的整个网站
-    （Django, Bootstrap, jQuery）
+  \item 熟练掌握C++多线程编程
+  \item 在校期间参与校内ACM集训队，并在LeetCode平台刷题近300道，具有较强的编程能力和解决问题的能力。	
 \end{itemize}
 
 %======================================================================
-\sectionTitle{个人项目}{\faCode}
+% \sectionTitle{个人项目}{\faCode}
 %======================================================================
-\begin{itemize}
-  \item \link{https://github.com/liweitianux/atoolbox}{\texttt{atoolbox}}:
-    (Python, Shell)
-    多年来累积的各种工具，帮助管理系统、执行常用任务、分析天文数据等
-  \item \link{https://github.com/liweitianux/dfly-update}{\texttt{dfly-update}}:
-    (Shell)
-    DragonFly BSD 系统更新程序
-  \item \link{https://github.com/liweitianux/openrcs}{\texttt{openrcs}}:
-    (C)
-    改进 \texttt{OpenBSD RCS}，使其与 \texttt{GNU RCS} 足够兼容
-  \item \link{https://github.com/liweitianux/fg21sim}{\texttt{fg21sim}}:
-    (Python)
-    模拟低频射电天空图像
-  \item \link{https://github.com/liweitianux/cdae-eor}{\texttt{cdae-eor}}:
-    (Python, Keras)
-    使用卷积去噪自动编码器（CDAE）分离宇宙再电离（EoR）信号
-  \item \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}:
-    (Python, Shell, Tcl)
-    X~射线天文观测数据的半自动化分析程序
-  \item \link{https://github.com/liweitianux/resume}{\texttt{resume}}:
-    (\LaTeX)
-    \emph{此简历}的模板和源文件
-\end{itemize}
+% \begin{itemize}
+%   \item xxx
+% \end{itemize}
 
 %======================================================================
 \sectionTitle{科研成果}{\faAtom}
@@ -156,11 +130,11 @@
   
   % \item \textbf{《基于深度学习的图像分割方法》} \\
   %       \textit{IEEE Transactions on Image Processing} (第一作者) \hfill 2025 
-  \item \textbf{发明专利：一种矩形印章文字识别方法} (第一作者) \hfill 2024(已授权) \\
-      专利号：ZL 2024 1 0373918.4 
-  \item \textbf{发明专利：一种文档图像表格类型判定方法} (第二作者,导师一作) \hfill 2025(已授权) \\
+  \item \textbf{发明专利：一种矩形印章文字识别方法}（第一发明人）\hfill 2024（已授权）\\
+      专利号：ZL 2024 1 0373918.4
+  \item \textbf{发明专利：一种文档图像表格类型判定方法} (第二作者,导师一作) \hfill 2025（已授权） \\
       专利号：ZL 2025 1 0865310.8 
-  \item \textbf{发明专利：一种轻量级表格结构识别方法} (第三作者) \hfill 2025(已授权)  \\
+  \item \textbf{发明专利：一种轻量级表格结构识别方法} (第三作者) \hfill 2025（已授权）  \\
       专利号：ZL 2025 1 0409433.0     
 \end{itemize}
 
@@ -169,26 +143,24 @@
 %======================================================================
 \begin{experiences}
   \experience%
-    [2018.04]%
-    {2018.08}%
-    {数据工程师 @ 上海领脉网络科技（初创公司）}%
+    [2023.05]%
+    {2023.08}%
+    {IT开发工程师 @ 南昌华勤电子科技有限公司}%
     [\begin{itemize}
-      \item 从 Amazon 网页搜索并挖取商品与广告信息
-        （Python, Requests, BeautifulSoup）
-      \item 配置 Airflow 服务器和数据库等基础设施，
-        定期从 Amazon 获取产品销售与广告投放等数据
-      \item 开发网站（Flask, jQuery），帮助客户优化 Amazon 广告投放
+      \item 分析数据，并自动生成数据报表。
+      \item 提交代码，完成合并后，自动化部署到测试环境，并进行测试。
+      \item 根据下发的需求，完成接口功能的实现。
     \end{itemize}]
 
-  \separator{0.5ex}
-  \experience%
-    [2013.07]%
-    {2013.09}%
-    {网站开发 @ 97 随访（初创公司）}%
-    [\begin{itemize}
-      \item 后端开发（Django），完成用户注册、数据存储和搜索等功能
-      \item 前端开发（jQuery, AJAX），对患者各项指标随时间的变化进行可视化
-    \end{itemize}]
+  % \separator{0.5ex}
+  % \experience%
+  %   [2023.07]%
+  %   {2023.09}%
+  %   {网站开发 @ xxx}%
+  %   [\begin{itemize}
+  %     \item xxx
+  %     \item xxx
+  %   \end{itemize}]
 \end{experiences}
 
 
@@ -196,9 +168,10 @@
 \sectionTitle{荣誉奖项}{\faTrophy}
 %======================================================================
 \begin{itemize}
-  \item 国家励志奖学金 \hfill 2021
-  \item 睿抗机器人开发者大赛(RAICOM) CAIP编程设计赛 国赛二等奖 \hfill 2023
-  \item 优秀研究生 \hfill 2025
+  \item \textbf{国家励志奖学金} \hfill 2021
+  \item \textbf{江西省大学生程序设计大赛一等奖 }	\hfill 2022
+  \item \textbf{睿抗机器人开发者大赛(RAICOM) CAIP编程设计赛 国赛二等奖} \hfill 2023
+  \item \textbf{优秀研究生} \hfill 2025
 \end{itemize}
 
 \end{document}
